@@ -1,6 +1,20 @@
 # holiday-gift-exchange
 Project to facilitate The Great Ninja Gift Exchange of 2020
 
+## The Premise
+
+The Anti White Elephant Gift Exchange (where we gift each other COOL things)
+
+1. Everyone gets $35 to select a gift/gifts that they would want for themselves (**but don't actually purchase the gift**)
+  - Some Guidelines:
+    - The items(s) must be available to be ordered online, save the link to the item(s)
+    - Gift cards are not allowed - this creates trouble with finance
+2. We get together as a team and perform a "white elephant" where you "virtually unwrap" a new gift or steal from previously opened gift 
+(technically we are stealing URLS from each other, not physical gifts)
+3. The gifts get tracked on a sheet. At the end of the session, I'll order the gifts to be sent to people and expense the results.
+
+
+
 ## Setup
 - Vault server
 - Config & Policies
