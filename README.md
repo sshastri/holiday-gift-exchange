@@ -1,4 +1,4 @@
-# holiday-gift-exchange
+# holiday-gift-exchange   ❄️ ☃️ 🎁 🍻 ❄️
 Project to facilitate The Great Ninja Gift Exchange of 2020
 
 ## The Premise
