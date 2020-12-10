@@ -1,0 +1,3 @@
+*.pem
+.cluster_id_rsa
+*.tfvars
