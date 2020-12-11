@@ -5,77 +5,120 @@
 mv /home/ec2-user/grinch.png /var/www/html
 
 cat << EOM > /var/www/html/index.html
-<html>
-  <head>
-    <title>Grinch Holiday Gift Exchange</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grinch Holiday Gift Exchange</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
 
-    <style>
-      body {
-        font-family: 'Rock Salt', cursive;
-      }
-
-      h1 {
-        color: maroon;
-        margin-left: 40px;
-      }
-    </style>
-
-
-
-  </head>
-  <body>
-  <div style="width:800px;margin: 0 auto">
-
-  <center><h2>Grinch Holiday Gift Exchange</h2></center>
-  <center><img width=300 src="./grinch.png"></img></center>
+  body {
+    margin: 0;
+    font-family: 'Rock Salt', cursive;
+  }
   
- <center><h3>powered by <a href="https://grinch.is.very-serious.business:8200/"> Vault</a></h3></center>
 
-<!-- Live dashboard-->
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
 
-.tg td {
-  font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;
-  padding:10px 10px;
-  word-break:normal;
-}
-  
-.tg th {
-  font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;
-}
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 
-.tg .tg-73oq{border-color:#FFFFFF;text-align:left;vertical-align:top}
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-73oq">People <br>(order to pick gift)</th>
-    <th class="tg-73oq">Gifts to pick from</th>
-    <th class="tg-73oq">Gift available for steal</th>
-    <th class="tg-73oq">Locked</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-73oq">Shobhna<br>Mom<br>Jason</td>
-    <td class="tg-73oq">sshastri<br>mom<br>jason </td>
-    <td class="tg-73oq"><a href="https://www.amazon.com/dp/B075D9G69J/ref=cm_gf_aAN_i3_d_bt30_p0_qd0_H5h7t0Xk82gAytvu8sD9" target="_blank" rel="noopener noreferrer"><span style="color:#905">socks</span></a></td>
-    <td class="tg-73oq"><a href="https://www.amazon.com/dp/B075D9G69J/ref=cm_gf_aAN_i3_d_bt30_p0_qd0_H5h7t0Xk82gAytvu8sD9" target="_blank" rel="noopener noreferrer"><span style="color:#905">candy</span></a></td>
-  </tr>
-</tbody>
-</table>
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 15px;
+  }
 
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<center><h2>Grinch Holiday Gift Exchange</h2></center>
+<center><img width=300 src="./grinch.png"></img></center>
+
+<center><h3>powered by <a href="https://grinch.is.very-serious.business:8200/"> Vault</a></h3></center>
+
+<div class="header">
+  <h1>Grinch Exchange Dashboard</h1>
+  <!-- <p>Resize the browser window to see the responsive effect.</p> -->
+</div>
+
+<!-- <div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+   <a href="#">Link</a>
+</div> -->
+
+<div class="row">
+  <div class="column">
+    <h2>Whos from Whoville</h2>
+    <p>a<br>b<br>c<br></p>
   </div>
-  </body>
+  
+  <div class="column">
+    <h2>Unopened Gifts</h2>
+    <p>a<br>b<br>c<br></p>
+  </div>
+  
+  <div class="column">
+    <h2>Open Gifts in Play</h2>
+    <p>a<br>b<br>c<br></p>
+  </div>
+  
+  <div class="column">
+    <h2>No More Steals</h2>
+    <p>a<br>b<br>c<br></p>
+  </div>
+</div>
+
+
+</body>
 </html>
 EOM
 
