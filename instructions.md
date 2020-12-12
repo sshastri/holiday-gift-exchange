@@ -1,7 +1,7 @@
 # Grinch Holiday Gift Exchange   ❄️ ☃️ 🎁 🍻 ❄️
 
 OK - you are here! You have selected your gift(s) online. What do you do now?
-![whos](https://lh3.googleusercontent.com/proxy/fFXcT7YB1t5X6L68cscPT2zSf7u07cpxQ-WKLDQEw4TY7id_zqSUmna6V3xNhoQD6-KY-4cgYzmpAClaxp4JwB7GXZA0uYfJFw)
+![whos](./img/whoville.jpg)
 
 ## Prerequisites
 - github account OR username/password provided by Culture Czar
