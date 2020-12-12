@@ -1,14 +1,21 @@
-resource "vault_policy" "example" {
+resource "vault_policy" "is-team" {
   name = "is-team"
 
   policy = <<EOT
-path "secret/sshastri/gift" {
-  capabilities = ["create", "update"]
-}
+  
+  path "secret/{{identity.entity.aliases.auth_github_d70a61ae.metadata.username}}/*" {
+    capabilities = ["list"]
+  }
 
-path "secret/sshastri/address" {
-  capabilities = ["create", "update"]
-}
+  path "secret/{{identity.entity.aliases.auth_github_d70a61ae.metadata.username}}/gift" {
+    capabilities = ["create", "update"]
+    required_parameters = ["description, url"]
+  }
+
+  path "secret/{{identity.entity.aliases.auth_github_d70a61ae.metadata.username}}/address" {
+    capabilities = ["create", "update"]
+    required_parameters = ["address"]
+  }
 
 EOT
 }
