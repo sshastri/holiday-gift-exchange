@@ -15,7 +15,7 @@ Example Key Value Entry:
 url="http://hellokitty.com/socks, http://hellokitty.com/shoes" description="Hello Kitty Socks and Shoes"
 
 
-## Command Line Instructons
+## Command Line Instructons (for github authentication)
 
 1. Authenticate to Vault using your github token
 
