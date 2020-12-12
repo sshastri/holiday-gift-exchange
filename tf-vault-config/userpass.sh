@@ -17,7 +17,11 @@ for u in "${users[@]}"
 do
   vault write auth/userpass/users/$u \
       password=$password \
-      policies=is-team
+      policies=userpass
+
+  vault write secret/$u/gift url=PLACEHOLDER description=PLACEHOLDER
+
+  vault write secret/$u/address address=PLACEHOLDER
 
   echo "Created userpass auth for $u"
 done
