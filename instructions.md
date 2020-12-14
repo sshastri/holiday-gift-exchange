@@ -45,7 +45,7 @@ address (example)= "1600 Pennsylvania Ave., Washington, D.C., 20500, USA"
 1. Authenticate to Vault using your github token
 
 ```bash
-export $VAULT_ADDR=https://grinch.is.very-serious.business:8200
+export VAULT_ADDR=https://grinch.is.very-serious.business:8200
 vault login -method=github
 GitHub Personal Access Token (will be hidden):
 
