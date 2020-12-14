@@ -7,7 +7,7 @@ OK - you are here! You have selected your gift(s) online. What do you do now?
 - github account OR username/password provided by Culture Czar
 - url of gift(s) (comma separated)
 - description of gift(s) 
-- shipping address
+- address you want the gift shipped to
 - credit card details and SSN (just kidding...)
 
 ## Web Instructions (for username/password)
@@ -27,8 +27,6 @@ IN THE BROWSER URL BAR, add your username to the URL and hit enter
 
 ![step5](./img/step5.png)
 
-TODO Update the above with a screenshot ^^
-
 6. There should be items listed (address and gift) These are keys in the Key/Value store. We need to update the "value"
 ![step6](./img/step6.png)
 
@@ -37,7 +35,8 @@ TODO Update the above with a screenshot ^^
 
 Note:<br> 
 description = a description of your gift(s) (Ex: Hello Kitty Socks and Shoes) <br>
-url = link to the gift(s) for online purchase, separate multiple urls w/ a comma (Ex: http://hellokitty.com/socks, http://hellokitty.com/shoes)
+url = link to the gift(s) for online purchase, separate multiple urls w/ a comma (Ex: http://hellokitty.com/socks, http://hellokitty.com/shoes)<br>
+address (example)= "1600 Pennsylvania Ave., Washington, D.C., 20500, USA"
 
 8. Logout. Congratulations you are done!
 
@@ -64,7 +63,7 @@ url="http://hellokitty.com/socks, http://hellokitty.com/shoes" \
 description="Hello Kitty Socks and Shoes"
 ```
 
-3. Enter your shipping address
+3. Enter your shipping address 
 
 ```
 vault kv put secret/<github_id>/address \
