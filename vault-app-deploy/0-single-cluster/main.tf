@@ -28,15 +28,11 @@ module "vault" {
   route53_hosted_zone_arn = var.route53_hosted_zone_arn
 
   availability_zones = [
-    "us-west-2a",
-    "us-west-2b",
-    "us-west-2c",
+    "us-west-2a"
   ]
 
   private_subnet_ids = [
-    "subnet-0fe29807276ccca3f",
-    "subnet-0853340eb05b02a2d",
-    "subnet-0176fb3e2c33f0d6d",
+   "subnet-0226b02c05388f0a5"
   ]
 
   vault_asg_capacity  = 1
