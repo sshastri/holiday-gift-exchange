@@ -35,7 +35,10 @@ resource "null_resource" "configure-grinch-app" {
     inline = [
       "sudo yum update -y",
       "sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2",
-      "sudo yum install -y httpd mariadb-server",
+      "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash",
+      "~/.nvm/nvm.sh",
+      "nvm install node",
+      "sudo yum install -y httpd mariadb-server git",
       "sudo systemctl start httpd",
       "sudo systemctl enable httpd",
       "sudo chown -R ec2-user:ec2-user /var/www/html",

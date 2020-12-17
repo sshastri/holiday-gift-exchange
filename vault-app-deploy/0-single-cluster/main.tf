@@ -32,7 +32,7 @@ module "vault" {
   ]
 
   private_subnet_ids = [
-   "subnet-0226b02c05388f0a5"
+   "subnet-8ada14f2"
   ]
 
   vault_asg_capacity  = 1
